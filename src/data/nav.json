@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "name": "Home",
+      "url": "/",
+      "title": "Home",
+      "aria": "Elevntonia Home Page"
+    },
+    {
+      "name": "Posts",
+      "url": "/posts",
+      "title": "Posts",
+      "aria": "Elevntonia Posts"
+    },
+    {
+      "name": "Pages",
+      "url": "/pages",
+      "title": "Pages",
+      "aria": "Elevntonia Page List"
+    }
+  ]
+}
