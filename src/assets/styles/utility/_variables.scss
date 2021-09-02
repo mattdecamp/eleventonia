@@ -1,4 +1,19 @@
 :root {
+  // COLORS
+  --background-color: #ffffff;
+  --background-color-secondary: #301e4e;
+
+  --headline: #1f1135;
+  --text-paragraph: #1f1135;
+  --sub-headline: #301e4e;
+
+  --link-color: #ff6e6c;
+
+  --tag-color: #301e4e;
+
+  --button-color: #ff636c;
+
+  // SPACING
   --ratio: 1.2;
   --s-5: calc(var(--s-4) / var(--ratio));
   --s-4: calc(var(--s-3) / var(--ratio));
