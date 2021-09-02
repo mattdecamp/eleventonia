@@ -1,15 +1,19 @@
 {
-  "name": "eleventania",
+  "name": "eleventonia",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "eleventy:dev": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "clean-css": "^5.1.5",
+    "cross-env": "^7.0.3",
+    "node-sass": "^6.0.1"
   }
 }
