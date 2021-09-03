@@ -1,19 +1,26 @@
 {
   "name": "eleventonia",
   "version": "1.0.0",
-  "description": "",
+  "description": "A mildly opinionated Eleventy starter kit",
   "main": "index.js",
   "scripts": {
     "eleventy:dev": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy --serve",
+    "eleventy:prod": "cross-env ELEVENTY_ENV=production npx @11ty/eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
+  "author": "Matt DeCamp",
+  "license": "MIT",
+  "dependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-plugin-rss": "^1.1.1",
     "clean-css": "^5.1.5",
     "cross-env": "^7.0.3",
+    "html-minifier": "^4.0.0",
+    "luxon": "^1.28.0",
     "node-sass": "^6.0.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
