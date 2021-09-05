@@ -1,1 +1,10 @@
-<header>Header</header>
+<header>
+  <div id="header--container">
+    <div id="header--left">
+      {{ site.name | lower }}
+    </div>
+    <div id="header--right">
+      {% include "partials/nav.njk" %}
+    </div>
+  </div>
+</header>
