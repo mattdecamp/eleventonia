@@ -1,6 +1,7 @@
 {
   "name": "Eleventonia",
   "description": "A mildly opinionated Eleventy starter project",
+  "url": "/",
   "githubUrl": "https://github.com/mattdecamp/eleventonia",
   "authorName": "Matt DeCamp",
   "authorHandle": "@mpdecamp",
