@@ -1,7 +1,11 @@
 <nav>
-  <ul>
-    {%- for item in nav.items -%}
-      <li>{{ item.data.name }}</li>
-    {%- endfor -%}
-  </ul>
+    <ul>
+        {%- for item in nav.items -%}
+        <a href="{{ item.url }}" title="{{ item.title }}">
+            <li>
+                {{ item.name }}
+            </li>
+        </a>
+        {%- endfor -%}
+    </ul>
 </nav>
