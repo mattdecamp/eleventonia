@@ -4,19 +4,19 @@
       "name": "Home",
       "url": "/",
       "title": "Home",
-      "aria": "Elevntonia Home Page"
+      "aria": "Eleventonia Home Page"
     },
     {
       "name": "Posts",
       "url": "/posts",
       "title": "Posts",
-      "aria": "Elevntonia Posts"
+      "aria": "Eleventonia Posts"
     },
     {
-      "name": "Pages",
-      "url": "/pages",
-      "title": "Pages",
-      "aria": "Elevntonia Page List"
+      "name": "About",
+      "url": "/about",
+      "title": "About",
+      "aria": "About {{ site.name }}"
     }
   ]
 }
