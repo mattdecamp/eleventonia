@@ -27,7 +27,6 @@ module.exports = function (config) {
       input: "src",
       output: "dist",
       includes: "includes",
-      layouts: "layouts",
       data: "data",
     },
     templateFormats: ["html", "njk", "md", "11ty.js"],
