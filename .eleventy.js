@@ -1,15 +1,14 @@
-const { DateTime } = require('luxon');
+const { DateTime } = require("luxon");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (config) {
-  // Passthrough copy
+  // PASSTHROUGHS
 
-  // Layouts //
-  config.addLayoutAlias("base", "base.njk");
-  config.addLayoutAlias("post", "post.njk");
-  config.addLayoutAlias("page", "page.njk");
+  // LAYOUTS //
+  config.addLayoutAlias("base", "layouts/base.njk");
+  config.addLayoutAlias("post", "layouts/post.njk");
 
-  // Transforms //
+  // TRANSFORMS //
   // Minify HTML
   const htmlMinTransform = require("./src/transforms/html-min.js");
   const isProduction = process.env.ELEVENTY_ENV === "production";
@@ -18,10 +17,17 @@ module.exports = function (config) {
     config.addTransform("htmlmin", htmlMinTransform);
   }
 
-  // Plug-Ins //
+  // PLUG-INS //
   config.addPlugin(pluginRss);
+  
+  // EXTRAS //
+  // Post List Excerpts
+  config.setFrontMatterParsingOptions({
+    excerpt: true,
+    excerpt_separator: "<!-- excerpt -->",
+  });
 
-  // Base confirguration //
+  // BASE CONFIGURATION //
   return {
     dir: {
       input: "src",
