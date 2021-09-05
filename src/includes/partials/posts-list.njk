@@ -1,0 +1,15 @@
+<div id="posts--list">
+    {%- for item in collections.post -%}
+    <article>
+        <h2>
+            {{ item.data.title }}
+        </h2>
+        <p>
+            {{ item.data.date }}
+        </p>
+        <p>
+            {{ item.data.page.excerpt }}
+        </p>
+    </article>
+    {%- endfor -%}
+</div>
