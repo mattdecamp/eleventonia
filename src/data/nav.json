@@ -1,22 +1,19 @@
 {
-  "items": [
-    {
-      "name": "Home",
-      "url": "/",
-      "title": "Home",
-      "aria": "Eleventonia Home Page"
-    },
-    {
-      "name": "Posts",
-      "url": "/posts",
-      "title": "Posts",
-      "aria": "Eleventonia Posts"
-    },
-    {
-      "name": "About",
-      "url": "/about",
-      "title": "About",
-      "aria": "About {{ site.name }}"
-    }
-  ]
+    "items": [
+        {
+            "name": "Home",
+            "url": "/",
+            "title": "Home"
+        },
+        {
+            "name": "Posts",
+            "url": "/posts",
+            "title": "Posts"
+        },
+        {
+            "name": "About",
+            "url": "/about",
+            "title": "About"
+        }
+    ]
 }
