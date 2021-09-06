@@ -6,17 +6,20 @@
 <html>
   <head>
     {% include "partials/meta.njk" %}
+    <link rel="stylesheet" href="{{ '/assets/styles/main.css' | url }}">
   </head>
   <body>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div id="main-container">
-      {% include "partials/header.njk" %}
-      <main>
-          {{ content | safe }}
-      </main>
+    <div id="layout">
+      <div id="main-container" role="document">
+        {% include "partials/header.njk" %}
+        <main>
+            {{ content | safe }}
+        </main>
+      </div>
+      {% include "partials/footer.njk" %}
     </div>
-    {% include "partials/footer.njk" %}
   </body>
 </html>
