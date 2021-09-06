@@ -1,15 +1,21 @@
 <div id="posts--list">
-    {%- for item in collections.post -%}
+    {%- for post in collections.post | reverse -%}
     <article>
-        <h2>
-            {{ item.data.title }}
-        </h2>
+        <a href="{{ post.url }}">
+            <h2>
+                {{ post.data.title }}
+            </h2>
+        </a>
+        <time>
+            {{ post.data.date }}
+        </time>
         <p>
-            {{ item.data.date }}
+            {{ post.data.page.excerpt }}
         </p>
-        <p>
-            {{ item.data.page.excerpt }}
-        </p>
+        {% for tag in post.data.tags %}
+        {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+        <a href="{{ tagUrl | url }}">{{ tag }}</a>
+        {% endfor %}
     </article>
     {%- endfor -%}
 </div>
