@@ -7,8 +7,11 @@ Main Style Sheet
 
 // Base Styles
 @import "base/reset"; 
+@import "base/normalize"; 
+@import "base/layout";
 
 // Component Styles
-
+@import "components/header";
+@import "components/footer";
 
 // Tool Styles
