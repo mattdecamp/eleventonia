@@ -5,4 +5,8 @@ layout: base
 <article>
   <h2>{{ title }}</h2>
   {{ content | safe }}
+  {% for tag in tags %}
+  {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+  <a href="{{ tagUrl | url }}">{{ tag }}</a>
+  {% endfor %}
 </article>
