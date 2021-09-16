@@ -9,9 +9,13 @@ Main Style Sheet
 @import "base/reset"; 
 @import "base/normalize"; 
 @import "base/layout";
+@import "base/text";
+@import "base/links";
+@import "base/fonts";
 
 // Component Styles
 @import "components/header";
 @import "components/footer";
-
+@import "components/nav";
+@import "components/icons"
 // Tool Styles
