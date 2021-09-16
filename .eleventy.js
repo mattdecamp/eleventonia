@@ -1,15 +1,23 @@
 const { DateTime } = require("luxon");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const svgSprite = require("eleventy-plugin-svg-sprite");
+const w3Date = require("./src/filters/w3DateFilter.js");
+const dateFilter = require('./src/filters/dateFilter.js');
 
 module.exports = function (config) {
   // PASSTHROUGHS
+  config.addPassthroughCopy("src/assets/images/");
 
   // LAYOUTS //
   config.addLayoutAlias("base", "layouts/base.njk");
   config.addLayoutAlias("post", "layouts/post.njk");
 
+  // FILTERS //
+  config.addFilter('w3Date', w3Date);
+  config.addFilter('dateFilter', dateFilter);
+
   // TRANSFORMS //
-  // Minify HTML
+  // minify HTML
   const htmlMinTransform = require("./src/transforms/html-min.js");
   const isProduction = process.env.ELEVENTY_ENV === "production";
   // html min only in production
@@ -19,8 +27,14 @@ module.exports = function (config) {
 
   // PLUG-INS //
   config.addPlugin(pluginRss);
-  
+  config.addPlugin(svgSprite, {
+    path: "./src/assets/icons",
+    svgShortcode: "icon",
+    globalClasses: "icon",
+  });
+
   // EXTRAS //
+
   // Post List Excerpts
   config.setFrontMatterParsingOptions({
     excerpt: true,
