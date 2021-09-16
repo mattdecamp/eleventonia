@@ -1,9 +1,10 @@
 ---
 layout: base
 ---
-
+<p>&laquo; Back to posts</p>
 <article>
   <h2>{{ title }}</h2>
+  <time>{{ date | dateFilter }}</time>
   {{ content | safe }}
   {% for tag in tags %}
   {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}

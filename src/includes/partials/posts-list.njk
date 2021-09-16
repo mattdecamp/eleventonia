@@ -6,8 +6,8 @@
                 {{ post.data.title }}
             </h2>
         </a>
-        <time>
-            {{ post.data.date }}
+        <time datetime="{{ post.data.date | w3Date }}">
+            {{ post.data.date | dateFilter }}
         </time>
         <p>
             {{ post.data.page.excerpt }}
