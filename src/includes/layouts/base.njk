@@ -13,8 +13,8 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <div id="layout">
+      {% include "partials/header.njk" %}
       <div id="main-container" role="document">
-        {% include "partials/header.njk" %}
         <main>
             {{ content | safe }}
         </main>
