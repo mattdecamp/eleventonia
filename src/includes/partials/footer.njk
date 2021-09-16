@@ -5,8 +5,14 @@
         {{ site.name | lower }} 
       </a>
     </div>
+    <div id="footer--middle">
+      <a href="{{ site.githubUrl }}">
+        {% svgsprite %}
+        {% icon "github" %}
+      </a>
+    </div>
     <div id="footer--right"> 
-      {{ site.copyright }}
+      &copy;{{ site.copyright }}
     </div>
   </div>
 </footer>
