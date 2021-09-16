@@ -1,0 +1,10 @@
+nav {
+  & ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: var(--s0);
+
+    font-size: var(--s1);
+  }
+}

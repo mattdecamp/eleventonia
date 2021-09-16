@@ -2,9 +2,10 @@
   // COLORS
   --background-color: #ffffff;
   --background-color-secondary: #301e4e;
+  --background-color-tertiary: #ff6e6c;
 
-  --headline: #1f1135;
-  --text-paragraph: #1f1135;
+  --text: #1f1135;
+  --text-secondary: #ffffff;
   --sub-headline: #301e4e;
 
   --link-color: #ff6e6c;
@@ -26,4 +27,6 @@
   --s3: calc(var(--s2) * var(--ratio));
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
+
+  --max-width: 1000px;
 }
