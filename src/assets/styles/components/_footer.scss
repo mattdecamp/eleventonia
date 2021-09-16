@@ -1,0 +1,25 @@
+footer {
+  width: 100%;
+  max-width: 100vw;
+  background: var(--background-color-secondary);
+
+  color: var(--text-secondary);
+  & a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+#footer--container {
+  width: 90%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--s2) 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
