@@ -1,11 +1,15 @@
 <nav>
     <ul>
         {%- for item in nav.items -%}
-        <a href="{{ item.url }}" title="{{ item.title }}">
+        {%- if item.url -%}
+            {%- set Current = (item.url == page.url) -%}
+            {%- set Parent = item.url != '/' and item.url in page.url -%}
             <li>
-                {{ item.name }}
+                <a class="{% if Current or Parent %}nav--active{% endif %}" href="{{ item.url }}" title="{{ item.title }}">
+                    {{ item.name }}
+                </a>
             </li>
-        </a>
+            {%- endif -%}
         {%- endfor -%}
     </ul>
 </nav>
