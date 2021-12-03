@@ -1,0 +1,27 @@
+h1 {
+    font-size: clamp(var(--s2),3vw,var(--s3));
+    margin: 0 0 var(--s0);
+}
+h2 {
+    font-size: clamp(var(--s1), 3vw, var(--s2));
+    margin: 0 0 var(--s-1);
+}
+h3 {
+    font-size: clamp(var(--s1),3vw,var(--s2));
+    margin: 0 0 var(--s-1);
+    font-style: italic;
+}
+h4 {
+    margin: var(--s-2) 0;
+    font-size: clamp(var(--s-0),3vw,var(--s1));
+    text-transform: uppercase;
+}
+
+p {
+    margin-bottom: var(--s1);
+}
+
+ul {
+    margin-top: var(--s0);
+    margin-bottom: var(--s0);
+}
