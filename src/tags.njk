@@ -1,13 +1,12 @@
 ---
 layout: base
-title: Tags
+title: Tag
 pagination:
     data: collections
-    size: 3
+    size: 1
+    filter: all
     alias: tag
-    filter:
-      - all
-    permalink: /tags/{{ tag }}/
+permalink: /tags/{{ tag }}/
 ---
 
 <h2>Posts filed under “{{ tag }}”</h2>
@@ -16,8 +15,7 @@ pagination:
     {% for post in postlist | reverse %}
     <li>
         <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-        <time>{{ post.date }}</time>
+        <time>{{ post.date | dateFilter }}</time>
     </li>
     {% endfor %}
 </ul>
-<p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>
