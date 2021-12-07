@@ -1,3 +1,6 @@
-#posts--list article {
-  margin-bottom: var(--s1);
+#posts--list {
+  
+    & article {
+        margin-bottom: var(--s2);
+    }
 }
