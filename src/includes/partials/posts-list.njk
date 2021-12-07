@@ -12,10 +12,14 @@
         <p>
             {{ post.data.page.excerpt }}
         </p>
-        {% for tag in post.data.tags %}
+        <div class="tags--container">
+        {% for tag in post.data.tags %} 
         {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-        <a href="{{ tagUrl | url }}">{{ tag }}</a>
-        {% endfor %}
+            <div class="tag">
+                <a href="{{ tagUrl | url }}">{{ tag }}</a>
+            </div>
+            {% endfor %}
+        </div>
     </article>
     {%- endfor -%}
 </div>
