@@ -1,0 +1,14 @@
+.tags--container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s0);
+}
+
+.tag {
+    & a {
+        padding: var(--s-2) var(--s-1);
+        color: var(--text-secondary);
+        text-decoration: none;
+        background: var(--background-color-secondary);
+    }
+}
