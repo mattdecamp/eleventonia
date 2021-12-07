@@ -13,22 +13,22 @@ header {
     flex-wrap: wrap;
     align-items: left;
 
-    color: var(--text);
-  }
-  
-  #header--title a {
+    color: var(--text-primary);
+}
+
+#header--title a {
     font-size: var(--s3);
     font-weight: 200;
     background: linear-gradient(
-      to right,
-      var(--text),
-      var(--text) 63%,
-      var(--link-color) 63%
-      );
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-decoration: none;
+        to right,
+        var(--primary),
+        var(--primary) 63%,
+        var(--secondary) 63%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 48rem) {
