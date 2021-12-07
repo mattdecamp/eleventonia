@@ -9,7 +9,12 @@ layout: base
     <h2>{{ title }}</h2>
     <time>{{ date | dateFilter }}</time>
     {{ content | safe }}
-    {% for tag in tags %} {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-    <a href="{{ tagUrl | url }}">{{ tag }}</a>
-    {% endfor %}
+    <div class="tags--container">
+        {% for tag in tags %} 
+        {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+            <div class="tag">
+                <a href="{{ tagUrl | url }}">{{ tag }}</a>
+            </div>
+            {% endfor %}
+    </div>
 </article>
