@@ -11,7 +11,7 @@ nav ul {
         content: '\200B';
     }
     & li a {
-        color: var(--text);
+        color: var(--text-secondary);
         text-decoration: none;
         &:hover {
             text-decoration: underline;
