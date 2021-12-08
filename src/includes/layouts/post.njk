@@ -7,7 +7,7 @@ layout: base
 </p>
 <article>
     <h2>{{ title }}</h2>
-    <time>{{ date | dateFilter }}</time>
+    <time class="post--time" datetime="{{ post.data.date }}">{{ date | dateFilter }}</time>
     {{ content | safe }}
     <div class="tags--container">
         {% for tag in tags %} 

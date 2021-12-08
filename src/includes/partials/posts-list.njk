@@ -6,7 +6,7 @@
                 {{ post.data.title }}
             </h2>
         </a>
-        <time datetime="{{ post.data.date | w3Date }}">
+        <time class="post--time" datetime="{{ post.data.date }}">
             {{ post.data.date | dateFilter }}
         </time>
         <p>
