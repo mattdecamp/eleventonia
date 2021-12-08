@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "eleventy:dev": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy --serve",
-    "eleventy:prod": "cross-env ELEVENTY_ENV=production npx @11ty/eleventy --serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "eleventy:prod": "cross-env ELEVENTY_ENV=production npx @11ty/eleventy --serve"
   },
   "keywords": [],
   "author": "Matt DeCamp",
