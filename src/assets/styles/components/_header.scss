@@ -17,7 +17,7 @@ header {
 }
 
 #header--title a {
-    font-size: var(--s3);
+    font-size: clamp(var(--s3),3vw,var(--s4));
     font-weight: 200;
     background: linear-gradient(
         to right,
