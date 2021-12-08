@@ -16,19 +16,19 @@ A mildly opinionated Eleventy starter project.
 
 ## Getting Started
 
-Navigate to the root folder of the site and
+Navigate to the root folder of the site and run:
 
 ```
 npm install
 ```
 
-Run the development environment
+To run the development environment:
 
 ```
 npm run eleventy:dev
 ```
 
-Build for production
+To build for production:
 
 ```
 npm run eleventy:prod
