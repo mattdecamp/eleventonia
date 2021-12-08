@@ -1,7 +1,6 @@
-const { DateTime } = require("luxon");
+// const { DateTime } = require("luxon");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const svgSprite = require("eleventy-plugin-svg-sprite");
-const w3Date = require("./src/filters/w3DateFilter.js");
 const dateFilter = require('./src/filters/dateFilter.js');
 
 module.exports = function (config) {
@@ -13,7 +12,6 @@ module.exports = function (config) {
   config.addLayoutAlias("post", "layouts/post.njk");
 
   // FILTERS //
-  config.addFilter('w3Date', w3Date);
   config.addFilter('dateFilter', dateFilter);
 
   // TRANSFORMS //
