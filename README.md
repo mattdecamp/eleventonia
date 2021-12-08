@@ -42,7 +42,7 @@ For additional eleventy commands, visit the [Eleventy command line usage page](h
 
 ## Credits and Thanks To
 
-Zach Leatherman
-Max Böck
-Andy Bell
-Phil Hawksworth
+* Zach Leatherman
+* Max Böck
+* Andy Bell
+* Phil Hawksworth
