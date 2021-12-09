@@ -13,6 +13,7 @@ A mildly opinionated Eleventy starter project.
 * Eleventy SVG Icon Sprites
 * Eleventy RSS
 * Date Formatting Filter
+* Post Excerpts
 
 ## Getting Started
 
