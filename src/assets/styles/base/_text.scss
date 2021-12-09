@@ -4,7 +4,6 @@ h1 {
 }
 h2 {
     font-size: clamp(var(--s2), 3vw, var(--s3));
-    margin: 0 0 var(--s-1);
 }
 h3 {
     font-size: clamp(var(--s1),3vw,var(--s2));
@@ -18,7 +17,6 @@ h4 {
 }
 
 p {
-    font-size: clamp(var(--s0),3vw,var(--s1));
     margin-bottom: var(--s1);
 }
 
