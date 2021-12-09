@@ -1,7 +1,16 @@
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>{{ title }} | {{ site.name }}</title>
-<link rel="canonical" href="{{site.url}}{{ permalink }}" />
+{%- set absolutePageUrl -%}{{ page.url | url | absoluteUrl(meta.url) }}{%- endset -%}
+{# General #}
+<meta name="description" content="{{ meta.description }}" />
+<link rel="canonical" href="{{ absolutePageUrl }}" />
+{# Open Graph #}
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ absolutePageUrl }}" />
+<meta property="og:locale" content="{{ meta.locale }}" />
+<meta property="og:site_name" content="{{ meta.title }}" />
+<meta property="og:title" content="{{ site.name }} | {{ title }}" />
+<meta property="og:description" content="{{ meta.description }}" />
+<meta property="og:image:alt" content="Page image for {{ site.name }}" />
+{# Favicon #}
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
@@ -9,17 +18,5 @@
 <link rel="mask-icon" href="/assets/images/icons/safari-pinned-tab.svg" color="#7798ab">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#f8f8f8">
-<meta property="og:site_name" content="{{ site.name }}" />
-<meta property="og:title" content="{{ site.name }} | {{ title }}" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="{{ site.url }}" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="og:image" content="{{site.url}}{{ site.socialImage }}" />
-<meta name="twitter:image" content="{{site.url}}{{ site.socialImage }}" />
-<meta property="og:image:alt" content="Page image for {{ site.name }}" />
-<meta name="twitter:image:alt" content="Page image for {{ site.name }}" />
-{% if metaDesc %}
-  <meta name="description" content="{{ metaDesc }}" />
-  <meta name="twitter:description" content="{{ metaDesc }}" />
-  <meta property="og:description" content="{{ metaDesc }}" />
-{% endif %}
+{# RSS #}
+<link type="application/atom+xml" rel="alternate" href="{{ meta.url }}/feed.xml" title="{{ meta.title }}">
