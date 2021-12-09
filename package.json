@@ -19,9 +19,5 @@
     "html-minifier": "^4.0.0",
     "luxon": "^1.28.0",
     "node-sass": "^6.0.1"
-  },
-  "devDependencies": {
-    "cross-env": "^7.0.3",
-    "get-google-fonts": "^1.2.2"
   }
 }
