@@ -4,8 +4,8 @@ date: 2021-09-05
 updated: Last Modified
 layout: post
 tags:
-    - basic
     - post
+    - back to the future
 ---
 
 What did you say? Good. Have a good trip Einstein, watch your head. Dear Doctor Brown, on the night that I go back in time, you will be shot by terrorists. Please take whatever precautions are necessary to prevent this terrible disaster. <!-- excerpt -->Your friend, Marty. Lynda, first of all, I'm not your answering service. Second of all, somebody named Greg or Craig called you just a little while ago. Ronald Reagon, the actor? Then who's vice president, Jerry Lewis? I suppose Jane Wymann is the first lady.
