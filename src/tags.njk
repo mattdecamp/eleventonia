@@ -6,7 +6,9 @@ pagination:
     size: 1
     filter: all
     alias: tag
-permalink: /tags/{{ tag }}/
+permalink: /tags/{{ tag | slug }}/
+eleventyComputed:
+    title: Tagged “{{ tag }}”
 ---
 
 <h2>Posts filed under “{{ tag }}”</h2>
