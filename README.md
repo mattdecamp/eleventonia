@@ -1,7 +1,5 @@
 # Eleventonia
 
-## Status: In production
-
 A mildly opinionated Eleventy starter project.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/mattdecamp/eleventonia)  
@@ -36,14 +34,10 @@ npm run eleventy:prod
 ```
 
 For additional eleventy commands, visit the [Eleventy command line usage page](https://www.11ty.dev/docs/usage/).
-## CSS
-
-
-## SVG Icon Sprites
 
 ## Credits and Thanks To
 
-* Zach Leatherman
-* Max Böck
-* Andy Bell
-* Phil Hawksworth
+* [Zach Leatherman](https://11ty.dev)
+* [Max Böck](https://github.com/maxboeck/eleventastic)
+* [Andy Bell](https://github.com/hankchizljaw/hylia)
+* [Phil Hawksworth](https://github.com/philhawksworth/eleventyone)
