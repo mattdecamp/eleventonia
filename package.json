@@ -2,12 +2,10 @@
   "name": "eleventonia",
   "version": "1.0.0",
   "description": "A mildly opinionated Eleventy starter kit",
-  "main": "index.js",
   "scripts": {
     "eleventy:dev": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy --serve",
     "eleventy:prod": "cross-env ELEVENTY_ENV=production npx @11ty/eleventy --serve"
   },
-  "keywords": [],
   "author": "Matt DeCamp",
   "license": "MIT",
   "dependencies": {
