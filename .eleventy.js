@@ -32,7 +32,6 @@ module.exports = function (config) {
   });
 
   // EXTRAS //
-
   // Post List Excerpts
   config.setFrontMatterParsingOptions({
     excerpt: true,
