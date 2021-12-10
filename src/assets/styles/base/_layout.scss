@@ -1,9 +1,16 @@
+
 #layout {
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    // min-height: 100%;
     min-height: 100vh;
-    background: linear-gradient(310deg, var(--background-color-tertiary), var(--background-color-tertiary) 20%, var(--background-color) 20%);
+    overflow: hidden;
+    background: linear-gradient(
+        310deg,
+        var(--background-color-tertiary),
+        var(--background-color-tertiary) 20%,
+        var(--background-color) 20%
+    );
 }
 #main-container {
     width: 90%;
@@ -11,7 +18,7 @@
     margin: 0 auto;
     padding-bottom: var(--s1);
     flex: 1 0 auto;
-    overflow:hidden;
+    overflow: hidden;
     & main {
         max-width: 65ch;
     }
