@@ -1,3 +1,4 @@
+// Based on Max Bock's scripts on eleventastic https://github.com/maxboeck/eleventastic
 // This runs the CSS file build
 // Converts Sass and compiles all files defined in main file
 
