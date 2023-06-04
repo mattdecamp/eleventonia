@@ -1,18 +1,33 @@
 // const { DateTime } = require("luxon");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const svgSprite = require("eleventy-plugin-svg-sprite");
-const dateFilter = require('./src/filters/dateFilter.js');
+const dateFilter = require("./src/filters/dateFilter.js");
+const cleanCSS = require("clean-css");
 
 module.exports = function (config) {
+
+  config.setServerOptions({
+    // Whether the live reload snippet is used
+    liveReload: true,
+    port: 3456,
+    watch: ["dist/**/*.css"],
+    showAllHosts: true,
+  });
   // PASSTHROUGHS
   config.addPassthroughCopy("src/assets/images/");
+  config.addPassthroughCopy("src/assets/styles/main.css");
 
   // LAYOUTS //
   config.addLayoutAlias("base", "layouts/base.njk");
   config.addLayoutAlias("post", "layouts/post.njk");
 
   // FILTERS //
-  config.addFilter('dateFilter', dateFilter);
+  // date filter
+  config.addFilter("dateFilter", dateFilter);
+  // clean and inline CSS
+  config.addFilter("cssmin", function (code) {
+    return new cleanCSS({}).minify(code).styles;
+  });
 
   // TRANSFORMS //
   // minify HTML
