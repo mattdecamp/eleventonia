@@ -5,7 +5,6 @@ const dateFilter = require("./src/filters/dateFilter.js");
 const cleanCSS = require("clean-css");
 
 module.exports = function (config) {
-
   config.setServerOptions({
     // Whether the live reload snippet is used
     liveReload: true,
@@ -15,7 +14,6 @@ module.exports = function (config) {
   });
   // PASSTHROUGHS
   config.addPassthroughCopy("src/assets/images/");
-  config.addPassthroughCopy("src/assets/styles/main.css");
 
   // LAYOUTS //
   config.addLayoutAlias("base", "layouts/base.njk");
