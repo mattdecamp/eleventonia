@@ -1,7 +1,0 @@
-{
-    "title": "{{ site.name }}",
-    "description": "A Mildly Opinionated Eleventy Starter",
-    "url": "",
-    "lang": "en",
-    "locale": "en_us"
-}
