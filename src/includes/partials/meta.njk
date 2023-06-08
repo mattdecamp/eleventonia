@@ -1,14 +1,13 @@
-{%- set absolutePageUrl -%}{{ page.url | url | absoluteUrl(meta.url) }}{%- endset -%}
 {# General #}
-<meta name="description" content="{{ meta.description }}" />
-<link rel="canonical" href="{{ absolutePageUrl }}" />
+<meta name="description" content="{{ site.description }}" />
+<link rel="canonical" href="{{ site.url }}" />
 {# Open Graph #}
 <meta property="og:type" content="website" />
-<meta property="og:url" content="{{ absolutePageUrl }}" />
-<meta property="og:locale" content="{{ meta.locale }}" />
-<meta property="og:site_name" content="{{ meta.title }}" />
-<meta property="og:title" content="{{ site.name }} | {{ title }}" /> 
-<meta property="og:description" content="{{ meta.description }}" />
+<meta property="og:url" content="{{ site.url }}" />
+<meta property="og:locale" content="{{ site.locale }}" />
+<meta property="og:site_name" content="{{ site.name }}" />
+<meta property="og:title" content="{{ site.name }}" /> 
+<meta property="og:description" content="{{ site.description }}" />
 <meta property="og:image:alt" content="Page image for {{ site.name }}" />
 <meta name="twitter:card" content="summary" />
 {# Favicon #}
@@ -22,4 +21,4 @@
 <meta name="msapplication-config" content="/assets/images/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 {# RSS #}
-<link type="application/atom+xml" rel="alternate" href="{{ meta.url }}/feed.xml" title="{{ meta.title }}">
+<link type="application/atom+xml" rel="alternate" href="/feed.xml" title="{{ site.name }}">
