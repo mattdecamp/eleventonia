@@ -9,7 +9,7 @@
     "sass:watch": "sass src/assets/styles/scss:src/includes/styles --watch --color",
     "sass:build": "sass src/assets/styles/scss:src/assets/styles --no-source-map --style=compressed",
     "dev": "run-p -l sass:build sass:watch eleventy:serve",
-    "build": "eleventy:build"
+    "build": "run-s -l eleventy:build sass:build"
   },
   "author": {
     "name": "Matt DeCamp",
